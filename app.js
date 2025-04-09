@@ -32,3 +32,5 @@ function deleteNote(index) {
 }
 
 window.onload = displayNotes;
+
+
