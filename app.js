@@ -33,26 +33,5 @@ function deleteNote(index) {
 
 window.onload = displayNotes;
 
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js').then((reg) => {
-    reg.onupdatefound = () => {
-      const newSW = reg.installing;
-      newSW.onstatechange = () => {
-        if (newSW.state === 'installed') {
-          if (navigator.serviceWorker.controller) {
-            // There's a new version available
-            const reloadBanner = document.createElement('div');
-            reloadBanner.innerHTML = `
-              <div style="background:#222; color:#fff; padding:10px; text-align:center;">
-                ?? A new version is available. <button onclick="location.reload()">Reload</button>
-              </div>`;
-            document.body.appendChild(reloadBanner);
-          } else {
-            console.log('Service Worker installed for first time.');
-          }
-        }
-      };
-    };
-  });
-}
+
 
