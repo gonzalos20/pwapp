@@ -1,4 +1,4 @@
-const CACHE_NAME = 'note-app-cache-v3';
+const CACHE_NAME = 'note-app-cache-v1';
 const urlsToCache = ['./', './index.html', './styles.css', './app.js', './manifest.json',   './icons/icon-192.png',
   '/icons/icon-512.png'];
 
