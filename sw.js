@@ -1,6 +1,6 @@
 const CACHE_NAME = 'note-app-cache-v1';
-const urlsToCache = ['./', './index.html', './styles.css', './app.js', './manifest.json',   './icons/icon-192.png',
-  '/icons/icon-512.png'];
+const urlsToCache = ['/pwapp/', '/pwapp/index.html', '/pwapp/styles.css', '/pwapp/app.js', '/pwapp/manifest.json',   '/pwapp/icons/icon-192.png',
+  '/pwapp/icons/icon-512.png'];
 
   self.addEventListener('install', (event) => {
     event.waitUntil(
